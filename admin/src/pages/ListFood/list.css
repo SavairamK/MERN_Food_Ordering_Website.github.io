@@ -1,0 +1,53 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
+
+.available-food-text{
+    font-size: large;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.list-table-format.title{
+    background-color: #eaeaea;
+}
+
+.list-table-format img{
+    width: 80px;
+}
+
+.list-table-format p{
+    font-size: 15px;
+}
+
+.title b{
+    font-size: 16px;
+}
+
+.delete-food{
+    cursor: pointer;
+}
+
+.delete-food:hover{
+    color: red;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px){
+    .list-table-format{
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 15px;
+    }
+    .list-table-format.title{
+        display: none;
+    }
+}
